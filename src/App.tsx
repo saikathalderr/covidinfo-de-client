@@ -12,7 +12,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <div className="container mx-auto">
+        <RouterProvider router={router} />
+      </div>
     </>
   );
 }
