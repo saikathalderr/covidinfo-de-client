@@ -1,5 +1,13 @@
+import Header from '@/components/common/Header';
+
 function GermanyDeaths() {
-    return <div>GermanyDeaths</div>;
+    const sectionName = 'Germany COVID Deaths';
+
+    return (
+        <>
+            <Header title={sectionName} />
+        </>
+    );
 }
 
 export default GermanyDeaths;
