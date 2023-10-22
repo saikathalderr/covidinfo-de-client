@@ -10,7 +10,7 @@ interface GermanyState {
     isLoading: boolean;
 }
 
-const _apiEndpoint = import.meta.env.VITE_API_ENDPOINT as string;
+const __apiUrl = import.meta.env.VITE_API_ENDPOINT as string;
 
 export const useGermanyStore = create<GermanyState>()(
     devtools((set) => ({
@@ -19,7 +19,7 @@ export const useGermanyStore = create<GermanyState>()(
         fetchGermany: async () => {
             set({ isLoading: true });
             const { data: fetchGermanyResp } = await axios.get<FetchGermanyResponse>(
-                `${_apiEndpoint}/germany`,
+                `${__apiUrl}/germany`,
             );
             const germany = fetchGermanyResp.data;
             set({ germany });
