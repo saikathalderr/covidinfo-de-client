@@ -1,6 +1,6 @@
 import TRow from '@/components/common/TRow';
 
-function StatesTableSkeleton() {
+function TableSkeleton() {
     return (
         <>
             <TRow>
@@ -21,4 +21,4 @@ function StatesTableSkeleton() {
     );
 }
 
-export default StatesTableSkeleton;
+export default TableSkeleton;

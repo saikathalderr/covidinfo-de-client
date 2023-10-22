@@ -8,7 +8,7 @@ type HeaderProps = {
 
 function Header({ title }: HeaderProps) {
     return (
-        <div className="py-5 border-b flex gap-2">
+        <div className="py-5 border-b flex gap-2 sticky top-0 bg-white">
             <Link to={'/'}>
                 <Button>
                     <Icon icon="iconamoon:home-duotone" />
