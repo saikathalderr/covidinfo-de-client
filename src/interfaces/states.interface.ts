@@ -75,26 +75,23 @@ export interface GermanyState {
     hospitalization: Hospitalization;
 }
 
-export interface GermanyAllStatesResponse {
-    data: {
-        SH: GermanyState;
-        HH: GermanyState;
-        NI: GermanyState;
-        HB: GermanyState;
-        NW: GermanyState;
-        HE: GermanyState;
-        RP: GermanyState;
-        BW: GermanyState;
-        BY: GermanyState;
-        SL: GermanyState;
-        BE: GermanyState;
-        BB: GermanyState;
-        MV: GermanyState;
-        SN: GermanyState;
-        ST: GermanyState;
-        TH: GermanyState;
-    };
-    meta: Meta;
+export interface GermanyAllStates {
+    SH: GermanyState;
+    HH: GermanyState;
+    NI: GermanyState;
+    HB: GermanyState;
+    NW: GermanyState;
+    HE: GermanyState;
+    RP: GermanyState;
+    BW: GermanyState;
+    BY: GermanyState;
+    SL: GermanyState;
+    BE: GermanyState;
+    BB: GermanyState;
+    MV: GermanyState;
+    SN: GermanyState;
+    ST: GermanyState;
+    TH: GermanyState;
 }
 export interface FetchGermanyAllStatesResponse {
     data: {
