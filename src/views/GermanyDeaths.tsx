@@ -24,7 +24,7 @@ function GermanyDeaths() {
     return (
         <>
             <Header title={sectionName} />
-            <div>
+            <div className="mb-10">
                 <Table>
                     <THead>
                         <TRow>
