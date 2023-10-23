@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+#### Demo 📺
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/saikathalderr/covidinfo-de-server/assets/29329128/4fb43e25-1356-4ccf-a6dd-01edadc44d5c
 
-Currently, two official plugins are available:
+#### Clone and Run ⚡️
+ - Open Terminal
+ -  Clone client and server repo
+		 - `git clone https://github.com/saikathalderr/covidinfo-de-client.git && git clone https://github.com/saikathalderr/covidinfo-de-server.git`
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Server setup 🧠
+ - Now move to server repo & run `npm install && npm run dev` (you can use `yarn` too) - server should be running on `http://localhost:4000`
+ - to see the doc of the API's, please visit http://localhost:4000/docs/
 
-## Expanding the ESLint configuration
+#### Client setup 🌈
+- Now move to the client repo from terminal & run  `npm install`
+- Create a file `.env.local` and add this line `VITE_API_ENDPOINT=http://localhost:4000` into it (or follow `env.example`)
+- now run `npm run dev` - client should be running on `http://localhost:5173`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
--   Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
--   Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
--   Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
--   Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+That's it, visit client url & enjoy ☺️, thanks for checking my work!!
