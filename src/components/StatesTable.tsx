@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 import { useGermanyStatesStore } from '@/store/useGermanyStates';
 
 function StatesTable() {
-    const isLoading = useGermanyStatesStore((state) => state.isLoading);
+    const isLoading = useGermanyStatesStore((state) => state.isLoadingAllStates);
     const fetchGermanyAllStatesData = useGermanyStatesStore((state) => state.fetchGermanyAllStates);
     const germanyAllStates = Object.values(
         useGermanyStatesStore((state) => state.states),
@@ -41,8 +41,6 @@ function StatesTable() {
                         : germanyAllStates.map((germanyState, idx) => {
                               const { id, name, cases, deaths } = germanyState;
                               const stateLink = `/germany/states/${name}`;
-                              const stateCasesLink = stateLink + `/cases`;
-                              const stateDeathsLink = stateLink + `/deaths`;
 
                               return (
                                   <TRow key={id}>
@@ -51,10 +49,10 @@ function StatesTable() {
                                           <Link to={stateLink}>{name}</Link>
                                       </TData>
                                       <TData>
-                                          <Link to={stateCasesLink}>{cases}</Link>
+                                          <Link to={stateLink}>{cases}</Link>
                                       </TData>
                                       <TData>
-                                          <Link to={stateDeathsLink}>{deaths}</Link>
+                                          <Link to={stateLink}>{deaths}</Link>
                                       </TData>
                                   </TRow>
                               );

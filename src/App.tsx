@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Germany from '@/views/Germany';
 import GermanyCases from '@/views/GermanyCases';
 import GermanyDeaths from '@/views/GermanyDeaths';
+import GermanyState from '@/views/GermanyState';
 
 function App() {
     const router = createBrowserRouter([
@@ -17,6 +18,10 @@ function App() {
         {
             path: '/germany/deaths',
             element: <GermanyDeaths />,
+        },
+        {
+            path: '/germany/states/:state',
+            element: <GermanyState />,
         },
     ]);
 
